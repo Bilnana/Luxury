@@ -1,0 +1,60 @@
+// /* ==========================================================================
+//    #BUTTONS
+//    ========================================================================== *
+
+.btn {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: $white;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  border-radius: 7px;
+  background-color: $orange-primary;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: lighten($orange-primary, 10%);
+  }
+
+  &-bordered {
+    max-width: 193px;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 95%;
+      height: 80%;
+      border: 2px solid $white;
+      border-radius: 7px;
+      position: absolute;
+    }
+
+  }
+
+  &-basic {
+    padding: 15px 35px;
+  }
+
+  &-subscribe {
+    padding: 11.5px 0;
+    max-width: 145px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .icon-plate {
+    margin-right: 8px;
+    color: $font-color;
+  }
+}
+

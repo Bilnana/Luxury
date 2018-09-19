@@ -1,0 +1,133 @@
+.header-slider {
+  width: 100%;
+  height: 570px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 100%;
+  }
+}
+
+.specials-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10px 10px;
+  position: relative;
+
+  @include mq(to768) {
+    padding: 65px 10px 10px;
+  }
+
+  h3 {
+    position: absolute;
+    top: -5px;
+    color: $white;
+  }
+
+  .specials-item {
+    text-align: center;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.56);
+    cursor: pointer;
+  }
+  
+  .swiper-pagination {
+    top: 25px;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    @include mq(to768) {
+      justify-content: center;
+      margin-top: 10px;
+    }
+  }
+
+  .item-desc {
+    padding: 50px;
+
+    @include mq(to768) {
+      padding: 30px 10px;
+    }
+
+    h4 {
+      margin-bottom: 30px;
+
+      @include mq(to768) {
+        color: $orange-primary;
+      }
+    }
+
+    &__text {
+      margin-bottom: 60px;
+      line-height: 1.6;
+
+      @include mq(to768) {
+        color: $white;
+      }
+    }
+
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 25px 0;
+      border-top: 1px solid $grey-border;
+
+      @include mq(to768) {
+        flex-wrap: wrap;
+        border-top: 2px solid $grey-border;
+      }
+  
+      span {
+        display: block;
+      }
+  
+      .text-broken {
+        text-align: left;
+        width: 120px;
+        border-right: 1px solid $grey-border;
+
+        .span-purple {
+          font-size: 15px;
+        }
+
+        .span-purple,
+        .span-black {
+          @include mq(to768) {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .number {
+        font-size: 26px;
+        color: $font-color;
+        font-weight: 700;
+      }
+
+      .price {
+        font-size: 30px;
+        font-weight: 700;
+        color: $orange-primary;
+
+        @include mq(to768) {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

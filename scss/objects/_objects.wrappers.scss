@@ -1,0 +1,346 @@
+/* ==========================================================================
+   #WRAPPERS
+   ========================================================================== */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero__text {
+    position: absolute;
+    z-index:3;
+
+    @include mq(to768) {
+      padding: 0 0 0 50px;
+    }
+
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+
+  .hero__sticker {
+    position: absolute;
+    bottom: -80px;
+    z-index: 3;
+
+    @include mq(to768) {
+      display: none;
+    }
+
+    img {
+      width: auto;
+    }
+  }
+}
+
+.info {
+  padding: 35px;
+  background-color: $grey-primary;
+
+  @include mq(to768) {
+    padding: 20px;
+  }
+
+  .info__inner {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mq(to768) {
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+
+  .span-orange {
+    text-transform: uppercase;
+    font-size: 22px;
+  }
+}
+
+.info-reviews,
+.info-call {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 1.5px solid $orange-primary;
+  padding: 0 20px;
+
+  @include mq(to768) {
+    border-right: none;
+    padding: 0;
+  }
+
+  .icon-chat,
+  .icon-call {
+    color: $orange-primary;
+    font-size: 40px;
+    margin-right: 20px;
+
+    @include mq(to768) {
+      display: none;
+    }
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.info-reviews {
+  @include mq(to768) {
+    display: none;
+  }
+} 
+
+.info-contact {
+  padding: 0 20px;
+
+  p {
+    font-size: 32px;
+    color: $font-color;
+    font-weight: 700;
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 65px 0;
+
+  @include mq(to768) {
+    flex-direction: column;
+    margin: 0 0 50px;
+  }
+
+  .about__description {
+    width: 50%;
+    margin-top: 50px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 50px;
+      line-height: 1.8;
+    }
+
+    @include mq(to768) {
+      width: 100%;
+    }
+  }
+
+  .about__gallery {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq(to768) {
+      width: 100%;
+    }
+
+    .gallery {
+      display: flex;
+
+      @include mq(to768) {
+        flex-direction: column;
+      }
+
+      .gallery__first,
+      .gallery__second {
+        width: 48%;
+
+        @include mq(to768) {
+          width: 100%;
+        }
+      }
+
+      .gallery__first {
+        margin-top: 50px;
+        margin-right: 20px;
+
+        @include mq(to768) {
+          margin-right: 0;
+        }
+      }
+
+      .gallery__item {
+        margin-bottom: 20px;
+
+        &:nth-child(2n) {
+          margin-bottom: 0;
+
+          @include mq(to768) {
+            margin-bottom: 20px;
+          }
+        }
+
+        @include mq(to768) {
+          margin-bottom: 20px;
+        }
+      }
+    } 
+  }
+}
+
+.specials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0;
+
+  @include mq(to768) {
+    padding: 50px 0;
+  }
+  
+  .specials__header {
+    height: 500px;
+    background-image: url(../../img/luxury-wood.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    top: 0;
+
+    @include mq(to768) {
+      height: 100%;
+    }
+
+    &::before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: $scarpa-flow;
+      opacity: 0.5;
+    }
+  }
+
+  .specials__footer {
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    bottom: 0px;
+    right: 8%;
+    transform: rotate(150deg);
+
+    @include mq(to768) {
+      display: none;
+    }
+  }
+}
+
+.food {
+  margin-bottom: 100px;
+
+  @include mq(to768) {
+    margin: 50px 0;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .btn-wrap {
+    display: flex;
+    justify-content: center;
+
+    @include mq(to768) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.reviews {
+  background-image: url('../../img/review-background.png');
+  background-repeat: none;
+  background-position: center;
+  background-size: 100%;
+  padding: 100px 0;
+
+  @include mq(to768) {
+    padding: 50px 0;
+  }
+
+  .reviews__item {
+    text-align: center;
+    color: $white;
+
+    h3 {
+      color: $white;
+      margin-bottom: 25px;
+    }
+
+    .visitor-review {
+      margin-bottom: 25px;
+      width: 70%;
+      margin: 0 auto;
+
+      @include mq(to768) {
+        width: 80%;
+        margin-bottom: 20px;
+      }
+
+      &::before {
+        content: '"';
+        font-size: 35px;
+        color: $white;
+      }
+
+      &::after {
+        content: '"';
+        font-size: 35px;
+        color: $white;
+      }
+    }
+
+    img {
+      width: auto;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.reserve {
+  padding: 100px 0;
+
+  @include mq(to768) {
+    padding: 50px 0;
+  }
+
+  .reserve-wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mq(to768) {
+      flex-direction: column;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  img {
+    max-width: 553px;
+    max-height: 334px;
+    height: 100%;
+    width: 100%;
+
+    @include mq(to768) {
+      margin-bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   #LIST-BASIC
+   ========================================================================== */
+.food-list {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 25px 0;
+	border-top: 2px solid dotted $grey-border;
+	border-bottom: 2px solid dotted $grey-border;
+
+	@include mq(to768) {
+	  display: none;
+	}
+
+	.food-list__item {
+		margin-right: 50px;
+		cursor: pointer;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		a {
+			font-size: 20px;
+			color: $font-color;
+			font-weight: 700;
+			transition: all 0.3s ease-in-out;
+		}
+
+		&:hover {
+			a {
+				color: $orange-primary;;
+			}
+		}
+	}
+}
+
+.link-content {
+	display: none;
+	padding: 50px 0;
+	min-height: 300px;
+	height: 100%;
+
+	&.current {
+		//display: block;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.link-content__item {
+		width: 45%;
+		margin-right: 5%;
+		height: 70px;
+		position: relative;
+		border-bottom: 1px solid dotted #5c6369;
+
+		@include mq(to768) {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 25px;
+			height: 80px;
+		}
+
+		.food-name {
+			font-size: 18px;
+			font-weight: 700;
+			color: $font-color;
+			margin-bottom: 8px;
+
+			@include mq(to768) {
+				padding-right: 20%;
+			}
+		}
+
+		.price {
+			position: absolute;
+			right: 0;
+			top: calc((42px - 26px)/2);
+			font-size: 26px;
+			font-weight: 700;
+			color: $orange-primary;
+			padding-left: 10px;
+
+			.dolar {
+				position: absolute;
+				font-size: 16px;
+				font-weight: 700;
+				top: 3px;
+				left: 0;
+			}
+		}
+
+		.food-desc {
+			font-size: 16px;
+			color: #5c6369;
+
+			@include mq(to768) {
+				padding-right: 20%;
+			}
+		}
+	}
+}

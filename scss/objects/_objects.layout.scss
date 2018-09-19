@@ -1,0 +1,90 @@
+// /* ==========================================================================
+//    #LAYOUT
+//    ========================================================================== */
+
+body {
+  width: 100%;
+  font-family: 'Sintony', sans-serif;
+  color: $black;
+  background-color: $white;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $black;
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: $black;
+}
+
+.small {
+  font-size: 14px;
+}
+
+span {
+  font-weight: 700;
+}
+
+.span-black {
+  color: $font-color;
+  text-transform: uppercase;
+  font-size: 18px;
+
+  .specials-slider & {
+    font-size: 15px;
+  }
+}
+
+.span-orange {
+  color: $orange-primary;
+}
+
+.span-purple {
+  color: $red-primary;
+  text-transform: uppercase;
+}
+
+.icon-menu-1 {
+  display: none;
+  color: $font-color;
+  font-size: 40px;
+  font-weight: 700;
+
+  @include mq(to768) {
+    display: block;
+
+    &.open {
+      color: $orange-primary;
+    }
+  }
+}
+
+.layout-container {
+  width: 100%;
+}
+
+.b-container {
+  width: 100%;
+}
+
+.s-container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include mq(to768) {
+    padding: 0 20px;
+  }
+} 
