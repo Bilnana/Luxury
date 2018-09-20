@@ -93,12 +93,21 @@
 
       span {
         display: block;
+
+        @include mq(to768) {
+          display: inline-block;
+        }
       }
 
       .text-broken {
         text-align: left;
         width: 120px;
         border-right: 1px solid $grey-border;
+
+        @include mq(to768) {
+          width: 48%;
+          border-right: none;
+        }
 
         .span-purple {
           font-size: 15px;
@@ -124,8 +133,8 @@
         color: $orange-primary;
 
         @include mq(to768) {
-          width: 100%;
-          margin-top: 20px;
+          width: 35%;
+          //margin-top: 20px;
         }
       }
     }
