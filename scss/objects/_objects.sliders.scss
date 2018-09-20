@@ -111,6 +111,10 @@
 
         .span-purple {
           font-size: 15px;
+
+          @include mq(to768) {
+            margin-left: 8px;
+          }
         }
 
         .span-purple,
