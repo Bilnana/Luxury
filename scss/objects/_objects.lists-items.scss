@@ -62,6 +62,10 @@
       height: 80px;
     }
 
+    @include mq(from768to1200) {
+      margin-top: 50px;
+    }
+
     .food-name {
       font-size: 18px;
       font-weight: 700;

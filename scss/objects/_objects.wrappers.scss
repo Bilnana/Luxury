@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @include mq(to768) {
+    @include mq(to1200) {
       flex-direction: column;
     }
   }
@@ -29,7 +29,7 @@
     height: 100%;
     width: 100%;
 
-    @include mq(to768) {
+    @include mq(to1200) {
       margin-bottom: 25px;
     }
   }
@@ -114,6 +114,11 @@
   @include mq(to768) {
     flex-direction: column;
     margin: 0 0 50px;
+  }
+
+  @include mq(from768to1200) {
+    
+    margin: 50px 0;
   }
 
   .about__description {
@@ -207,7 +212,7 @@
     position: absolute;
     top: 0;
 
-    @include mq(to768) {
+    @include mq(to1200) {
       height: 100%;
     }
 
@@ -231,7 +236,7 @@
     right: 8%;
     transform: rotate(150deg);
 
-    @include mq(to768) {
+    @include mq(to1200) {
       display: none;
     }
   }
@@ -242,6 +247,10 @@
 
   @include mq(to768) {
     margin: 50px 0;
+  }
+
+  @include mq(from768to1200) {
+    margin: 80px 0;
   }
 
   h3 {

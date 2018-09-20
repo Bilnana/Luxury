@@ -30,6 +30,10 @@
 
     img {
       width: auto;
+
+      @include mq(from768to1200) {
+        width: 180px;
+      }
     }
   }
 }

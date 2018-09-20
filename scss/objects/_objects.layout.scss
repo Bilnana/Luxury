@@ -87,4 +87,8 @@ span {
   @include mq(to768) {
     padding: 0 20px;
   }
+
+  @include mq(from768to1200) {
+    padding: 0 35px;
+  }
 }

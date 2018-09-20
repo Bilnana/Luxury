@@ -12,6 +12,10 @@
     padding: 20px;
   }
 
+  @include mq(from768to1200) {
+    padding: 20px;
+  }
+
   img {
     width: auto;
 

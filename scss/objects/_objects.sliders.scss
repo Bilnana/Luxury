@@ -30,6 +30,10 @@
     padding: 65px 10px 10px;
   }
 
+  @include mq(from768to1200) {
+    padding: 100px 25px;
+  }
+
   h3 {
     position: absolute;
     top: -5px;
@@ -53,6 +57,11 @@
       justify-content: center;
       margin-top: 10px;
     }
+
+    @include mq(from768to1200) {
+      top: 50px;
+      justify-content: center;
+    }
   }
 
   .item-desc {
@@ -74,7 +83,7 @@
       margin-bottom: 60px;
       line-height: 1.6;
 
-      @include mq(to768) {
+      @include mq(to1200) {
         color: $white;
       }
     }

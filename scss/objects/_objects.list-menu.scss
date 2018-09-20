@@ -52,6 +52,10 @@
       padding: 12px 0;
     }
 
+    @include mq(from768to1200) {
+      margin-right: 12px;
+    }
+
     &:last-child {
       margin-right: 0;
     }
