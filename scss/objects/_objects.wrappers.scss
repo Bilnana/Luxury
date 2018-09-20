@@ -282,9 +282,8 @@
     }
 
     .visitor-review {
-      margin-bottom: 25px;
       width: 70%;
-      margin: 0 auto;
+      margin: 0 auto 25px;
 
       @include mq(to768) {
         width: 80%;
@@ -318,7 +317,7 @@
     padding: 50px 0;
   }
 
-  .reserve-wraper {
+  .reserve__wraper {
     display: flex;
     align-items: center;
     justify-content: space-between;
