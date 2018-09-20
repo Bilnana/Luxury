@@ -1,10 +1,8 @@
 .swiper-container {
-
   .swiper-pagination {
-
     .swiper-pagination-bullet {
       margin-bottom: 15px;
-      width:16px;
+      width: 16px;
       height: 16px;
       border: 2px solid $orange-primary;
       background-color: transparent;
@@ -26,7 +24,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-  
+
         &::before {
           content: '';
           width: 4px;

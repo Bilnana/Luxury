@@ -40,14 +40,14 @@
 
       .socials {
         @include mq(to768) {
-         text-align: center;
+          text-align: center;
         }
       }
     }
 
     .avilables {
       @include mq(to768) {
-       text-align: center;
+        text-align: center;
       }
 
       a {

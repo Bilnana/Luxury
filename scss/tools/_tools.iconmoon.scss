@@ -29,26 +29,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-shopping-cart:before {
+.icon-shopping-cart::before {
   content: "\e900";
 }
-.icon-plate:before {
+
+.icon-plate::before {
   content: "\e901";
 }
-.icon-chat:before {
+
+.icon-chat::before {
   content: "\e902";
 }
-.icon-call:before {
+
+.icon-call::before {
   content: "\e903";
 }
-.icon-right-arrow:before {
+
+.icon-right-arrow::before {
   content: "\e904";
   color: #fffaf1;
 }
-.icon-left-arrow:before {
+
+.icon-left-arrow::before {
   content: "\e905";
   color: #fffaf1;
 }
-.icon-menu-1:before {
+
+.icon-menu-1::before {
   content: "\e906";
 }

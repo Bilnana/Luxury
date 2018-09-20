@@ -38,10 +38,10 @@
 
   .specials-item {
     text-align: center;
-    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.56);
+    box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.56);
     cursor: pointer;
   }
-  
+
   .swiper-pagination {
     top: 25px;
     height: 30px;
@@ -90,11 +90,11 @@
         flex-wrap: wrap;
         border-top: 2px solid $grey-border;
       }
-  
+
       span {
         display: block;
       }
-  
+
       .text-broken {
         text-align: left;
         width: 120px;

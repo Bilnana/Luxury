@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .hero__text {
+    position: absolute;
+    z-index: 3;
+
+    @include mq(to768) {
+      padding: 0 0 0 50px;
+    }
+
+    h2,
+    h3 {
+      color: $white;
+    }
+  }
+
+  .hero__sticker {
+    position: absolute;
+    bottom: -80px;
+    z-index: 3;
+
+    @include mq(to768) {
+      display: none;
+    }
+
+    img {
+      width: auto;
+    }
+  }
+}

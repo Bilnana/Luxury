@@ -1,38 +1,36 @@
 /* ==========================================================================
    #WRAPPERS
    ========================================================================== */
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.reserve {
+  padding: 100px 0;
 
-  .hero__text {
-    position: absolute;
-    z-index:3;
+  @include mq(to768) {
+    padding: 50px 0;
+  }
+
+  .reserve__wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     @include mq(to768) {
-      padding: 0 0 0 50px;
-    }
-
-    h2,
-    h3 {
-      color: $white;
+      flex-direction: column;
     }
   }
 
-  .hero__sticker {
-    position: absolute;
-    bottom: -80px;
-    z-index: 3;
+  h3 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  img {
+    max-width: 553px;
+    max-height: 334px;
+    height: 100%;
+    width: 100%;
 
     @include mq(to768) {
-      display: none;
-    }
-
-    img {
-      width: auto;
+      margin-bottom: 25px;
     }
   }
 }
@@ -95,7 +93,7 @@
   @include mq(to768) {
     display: none;
   }
-} 
+}
 
 .info-contact {
   padding: 0 20px;
@@ -185,7 +183,7 @@
           margin-bottom: 20px;
         }
       }
-    } 
+    }
   }
 }
 
@@ -199,7 +197,7 @@
   @include mq(to768) {
     padding: 50px 0;
   }
-  
+
   .specials__header {
     height: 500px;
     background-image: url(../../img/luxury-wood.jpeg);
@@ -229,7 +227,7 @@
     height: 310px;
     width: 310px;
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 8%;
     transform: rotate(150deg);
 
@@ -245,7 +243,7 @@
   @include mq(to768) {
     margin: 50px 0;
   }
-  
+
   h3 {
     text-align: center;
     margin-bottom: 25px;
@@ -310,36 +308,3 @@
   }
 }
 
-.reserve {
-  padding: 100px 0;
-
-  @include mq(to768) {
-    padding: 50px 0;
-  }
-
-  .reserve__wraper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @include mq(to768) {
-      flex-direction: column;
-    }
-  }
-
-  h3 {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  img {
-    max-width: 553px;
-    max-height: 334px;
-    height: 100%;
-    width: 100%;
-
-    @include mq(to768) {
-      margin-bottom: 25px;
-    }
-  }
-}
