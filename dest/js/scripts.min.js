@@ -2,6 +2,7 @@ $( document ).ready(function() {
   mobileMenu ();
   isSmallDevice ();
   linkPanels ();
+  formValidation ();
 
 
   var swiperHeader = new Swiper('.header-slider', {
@@ -71,6 +72,20 @@ function isSmallDevice () {
     $('.link-content').removeClass('current');
     $(this).addClass('current').siblings().removeClass('current');
     $('#' + link_id).addClass('current');
+  });
+}
+
+/* FormValidation */
+function formValidation () {
+  var input = $('.r-form__control');
+
+  input.on('keyup', function () {
+    if($(this).val()) {
+      $(this).addClass('filed');
+    } else {
+      $(this).removeClass('filed');
+    }
+    console.log('it work');
   });
 }
 

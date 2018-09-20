@@ -29,13 +29,23 @@ input[type="text"] {
       width: 100%;
       height: 100%;
       padding: 0 8px;
+
+      &.filed {
+        color: $red-primary;
+
+        + .r-form__placeholder {
+          transform: translateY(calc(-100% - 12px));
+        }
+      }
     }
 
     .r-form__placeholder {
       position: absolute;
       font-size: 14px;
-      bottom: calc(24px / 2);
+      bottom: 12px;
       left: 8px;
+      transform: translateY(0);
+      transition: all 0.3s ease-in;
     }
   }
 
