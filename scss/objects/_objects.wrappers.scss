@@ -227,19 +227,6 @@
       opacity: 0.5;
     }
   }
-
-  .specials__footer {
-    height: 310px;
-    width: 310px;
-    position: absolute;
-    bottom: 0;
-    right: 8%;
-    transform: rotate(150deg);
-
-    @include mq(to1200) {
-      display: none;
-    }
-  }
 }
 
 .food {

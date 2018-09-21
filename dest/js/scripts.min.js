@@ -1,9 +1,14 @@
 $( document ).ready(function() {
+  swiperSliders ();
   mobileMenu ();
   isSmallDevice ();
   linkPanels ();
   formValidation ();
 
+});
+
+/* Swiper slider */
+function swiperSliders () {
 
   var swiperHeader = new Swiper('.header-slider', {
     preventClicks: false,
@@ -37,8 +42,7 @@ $( document ).ready(function() {
       prevEl: '.swiper-button-prev',
     },
   });
-});
-
+}
 
 /* Mobile menu */
 function mobileMenu () {
