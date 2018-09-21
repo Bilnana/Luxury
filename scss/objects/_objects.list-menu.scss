@@ -46,6 +46,7 @@
 
   .l-menu__item {
     margin-right: 34px;
+    transition: all 0.3s ease-in;
 
     @include mq(to768) {
       margin-right: 0;
@@ -75,6 +76,7 @@
       a {
         color: $orange-primary;
       }
+      transform: translateY(-10px);
     }
 
     .icon-shopping-cart {

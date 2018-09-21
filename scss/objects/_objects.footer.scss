@@ -42,6 +42,21 @@
         @include mq(to768) {
           text-align: center;
         }
+
+        .socials__item {
+
+          img {
+            transition: all 0.3s ease-in-out;
+            opacity: 0.7;
+          }
+
+          &:hover {
+            img {
+              transform: translateY(-10px);
+              opacity: 1;
+            }
+          }
+        }
       }
     }
 
