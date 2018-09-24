@@ -93,5 +93,13 @@
   li {
     margin-bottom: 10px;
     font-size: 14px;
+
+    a {
+      transition: all 0.2s ease-in;
+      
+      &:hover {
+        color: $orange-primary;
+      }
+    }
   }
 }

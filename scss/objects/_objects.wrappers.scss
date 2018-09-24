@@ -153,6 +153,7 @@
 
       @include mq(to768) {
         flex-direction: column;
+        width: 100%;
       }
 
       .gallery__first,
@@ -174,20 +175,28 @@
       }
 
       .gallery__item {
-        margin-bottom: 20px;
-
-        &:nth-child(2n) {
-          margin-bottom: 0;
-
-          @include mq(to768) {
-            margin-bottom: 20px;
-          }
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        overflow: hidden;
 
         @include mq(to768) {
           margin-bottom: 20px;
         }
-      }
+
+        &:first-child {
+         margin-bottom: 20px;
+       }
+
+       img {
+         transition: all 0.3 ease-in-out;
+
+         &:hover {
+           transform: scale(1.2);
+         }
+       }
+     }
     }
   }
 }
@@ -303,4 +312,3 @@
     }
   }
 }
-
