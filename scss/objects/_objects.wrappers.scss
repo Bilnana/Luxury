@@ -1,6 +1,13 @@
 /* ==========================================================================
    #WRAPPERS
    ========================================================================== */
+.main-content {
+  position: relative;
+  margin-bottom: 500px;
+  z-index: 30;
+  background-color: $white;
+}
+
 .reserve {
   padding: 100px 0;
 

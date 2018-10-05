@@ -109,6 +109,9 @@ gulp.task('scripts', function() {
     ])
     //.pipe(minifyjs())
     .pipe(concat('scripts.min.js'))
+    .pipe(babel({
+      presets: ['env']
+    }))
     .pipe(gulp.dest('./dest/js'))
 })
 
